@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, ApocalypseDefenseActivity!</string>
+    <string name="app_name">Apocalypse Defense</string>
+    <string name="new_game">New Game</string>
+    <string name="resume_game">Resume Game</string>
+    <string name="achievements">Achievements</string>
+    <string name="difficulty_easy">Easy</string>
+    <string name="difficulty_hard">Hard</string>
+    <string name="new_game_settings_instructions">Tap map to begin.</string>
+    <string name="achievements_screen_title">Achievements</string>
+    <string name="zombies_killed">"Zombies Killed: "</string>
+    <string name="towers_label">Towers</string>
+    <string name="options_screen_title">Options</string>
+    <string name="background_sound_label">Background sound</string>
+    <string name="sound_effects_label">Sound effects</string>
+    <string name="tower_instructions">Tap the map to place a tower. Towers cost $10. You won\'t be able to place one if your cash is too low.</string>
+    <string name="button_instructions">Use the standard buttons to exit. Back will prompt you. Home will exit immediately.</string>
+</resources>

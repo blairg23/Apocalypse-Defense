@@ -1,0 +1,14 @@
+syntax: glob
+.idea/
+workspace/ApocalypseDefense/bin/
+workspace/ApocalypseDefense/gen/
+workspace/ApocalypseDefenseTest/bin/
+workspace/ApocalypseDefenseTest/gen/
+workspace/.metadata/
+*.class
+*.DS_Store
+*.orig
+fade in a gallery widget.png
+workspace/LunarLander
+out/
+*.iml
