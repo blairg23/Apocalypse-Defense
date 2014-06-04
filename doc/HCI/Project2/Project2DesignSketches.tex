@@ -1,0 +1,158 @@
+\documentclass[oneside]{article}%You can define the type of paper here.
+%%Useful packages that I commonly use.
+%\usepackage[numbers]{natbib}%Bibliography package (help at http://merkel.zoneo.net/Latex/natbib.php).
+%\usepackage{url}%Package to highlight url.
+\usepackage{mathpazo}%Sets font to be math pazo.
+\usepackage{alltt}%Allows the use of verbatim (good for printing out code).
+%\usepackage{graphicx}%Used to import images.
+\usepackage{amsmath, amssymb, amscd}%Contains the AMS expanded math symbols library.
+\usepackage[explicit]{titlesec} %To remove section title in headers
+%%For those who want smaller margins, you can use this:
+\usepackage[top=1in, bottom=1in, left=1in, right=1in]{geometry}
+\usepackage{fancyhdr} %%For headers/footers
+%\usepackage{savetrees} %%Removes white space
+\pagestyle{fancy} %%For fancy headers
+\usepackage{tocloft}
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
+\usepackage{pdfpages}
+\usepackage{graphicx} %for including graphics and figures
+\usepackage{enumerate} %for custom enumerations
+\usepackage{caption} %for captions outside of floats
+\usepackage{chemarr} %for using xrightleftharpoons for chemical reactions
+\usepackage{multirow} % for using a table label that is multiple rows in size
+
+\fancyhf{} %removes page enumeration from center middle of footer
+
+\def\undertilde#1{\mathord{\vtop{\ialign{##\crcr
+   $\hfil\displaystyle{#1}\hfil$\crcr\noalign{\kern1.5pt\nointerlineskip}
+   $\hfil\tilde{}\hfil$\crcr\noalign{\kern1.5pt}}}}}
+
+
+%for an approximate proportion symbol:
+\def\approxprop{%
+  \def\p{%
+    \setbox0=\vbox{\hbox{$\propto$}}%
+    \ht0=0.6ex \box0 }%
+  \def\s{%
+    \vbox{\hbox{$\sim$}}%
+  }%
+  \mathrel{\raisebox{0.7ex}{%
+      \mbox{$\underset{\s}{\p}$}%
+    }}%
+}
+
+\begin{document}
+%% Top needs  to say "UNIVERSITY OF MONTANA: COMPUTER SCIENCE DEPARTMENT"
+%%Title
+\fancyhead[L]{CSCI 576 - HUMAN-COMPUTER INTERACTION} %%Header
+\fancyhead[R]{\thepage} %Page enumeration
+\fancyfoot[L]{BLAIR GEMMER - UNIVERSITY OF MONTANA: COMPUTER SCIENCE DEPARTMENT} %Footer
+\rhead{}
+\fancyhead[R]{\thepage} %Page enumeration
+\renewcommand{\footrulewidth}{1pt}
+
+%Fix headers on Table of Contents and List of Figures:
+\fancypagestyle{plain}{
+\fancyhead{}
+\fancyfoot{}
+\fancyhead[L]{CSCI 576 - HUMAN-COMPUTER INTERACTION} %%Header
+\fancyfoot[L]{BLAIR GEMMER - UNIVERSITY OF MONTANA: COMPUTER SCIENCE DEPARTMENT} %Footer
+\rhead{}
+\renewcommand{\footrulewidth}{1pt}
+}
+
+\title{Project 2: Low-Fidelity Design Sketches}
+\author{Blair Gemmer}
+\maketitle
+
+\newcommand*\Hide{%
+\titleformat{\chapter}[display]
+  {}{}{0pt}{\Huge}
+\titleformat{\part}
+  {}{}{0pt}{}
+}
+
+\newpage
+
+\subsection*{Description}
+Our goal for milestone 2 was to produce low-fidelity mockups of our in-game user interface screens. The pictures I took were less than the quality I would've wished, so I enhanced them using a high pass filter and hard light blending options in photoshop.\\
+\begin{minipage}{\linewidth}
+		\makebox[\linewidth]{%
+		\centering
+		\includegraphics[scale=.9]{1.jpg}}
+		\captionof{figure}{Low-Fidelity Design Sketch illustrating the Splash Screen, Intro Screen, Game Options, and Mission Select (pre-filter).}
+		\end{minipage}\\
+\begin{minipage}{\linewidth}
+		\makebox[\linewidth]{%
+		\centering
+		\includegraphics[scale=.9]{1.png}}
+		\captionof{figure}{Low-Fidelity Design Sketch illustrating the Splash Screen, Intro Screen, Game Options, and Mission Select (post-filter).}
+		\end{minipage}\\
+\begin{minipage}{\linewidth}
+		\makebox[\linewidth]{%
+		\centering
+		\includegraphics[scale=.9]{2.jpg}}
+		\captionof{figure}{Low-Fidelity Design Sketch illustrating the Saved Games, Custom Map Editor, Upgrade Screen, and In-Game User Interface (pre-filter).}
+		\end{minipage}\\
+\begin{minipage}{\linewidth}
+		\makebox[\linewidth]{%
+		\centering
+		\includegraphics[scale=.9]{2.png}}
+		\captionof{figure}{Low-Fidelity Design Sketch illustrating the Saved Games, Custom Map Editor, Upgrade Screen, and In-Game User Interface (post-filter).}
+		\end{minipage}\\
+\begin{minipage}{\linewidth}
+		\makebox[\linewidth]{%
+		\centering
+		\includegraphics[scale=.9]{3.jpg}}
+		\captionof{figure}{Low-Fidelity Design Sketch illustrating the Store and the Scoreboard Screen (pre-filter).}
+		\end{minipage}\\
+\begin{minipage}{\linewidth}
+		\makebox[\linewidth]{%
+		\centering
+		\includegraphics[scale=.9]{3.png}}
+		\captionof{figure}{Low-Fidelity Design Sketch illustrating the Store and the Scoreboard Screen (post-filter).}
+		\end{minipage}\\
+
+%for creating a table (notice the multicolumn and multirow commands also for formatting the labels)
+%\begin{center}
+%	\begin{tabular}{| l | l | l | l | l |}
+%		\hline
+%		\multirow{3}{*}{Day \#}  & \multicolumn{4}{c}{Mean density}\vline\\
+%		\cline{2-5}
+%		& \multicolumn{2}{c}{In isolation} \vline& \multicolumn{2}{c}{In competition}\vline\\
+%		\cline{2-5}
+%		& \textit{P. aurelia} & \textit{P. caudatum} & \textit{P. aurelia} & \textit{P. caudatum}\\
+%		\hline
+%		0 & 2 & 2 & 2 & 2\\
+%		\hline
+%		1 & | & | & | & |\\
+%		\hline
+%		2 & a & b & c & d\\
+%		\hline
+%	\end{tabular}
+%	\captionof{table}{Summary of the cases shown in Figure 3.}
+%\end{center}
+
+%for creating a vector or matrix, floating to the left:
+%$f(x) =$ \( \left[ \begin{array}{ccc}
+%a&b&c\\
+%d&e&f
+%\end{array} \right]\) 
+%
+%%for creating a vector or matrix, floating to the right:
+%$f(x) =$ \[ \left[ \begin{array}{ccc}
+%a&b&c\\
+%d&e&f
+%\end{array} \right]\] 
+
+%For creating an image with a caption:
+%\begin{minipage}{\linewidth}
+%		\makebox[\linewidth]{%
+%		\centering
+%		\includegraphics[scale=.1]{plots/problem242/1.jpg}}
+%		\captionof{figure}{Plot of $a_n$ along time $n$, showing the oscillation between $a_{max}$ and $a_{min}$, }
+%		\captionof*{figure}{where $a_{max} = $ toxicity of a drug and $a_{min} = $ effectual level of drug.}
+%		\end{minipage}\\
+
+
+\end{document}
