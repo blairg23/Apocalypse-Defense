@@ -1,49 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:orientation="vertical" >
-
-    <TextView
-        android:id="@+id/instructions"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:gravity="center_horizontal"
-        android:text="@string/new_game_settings_instructions"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
-
-    <Gallery
-        android:id="@+id/mapGallery"
-        android:layout_width="fill_parent"
-        android:layout_height="0dp"
-        android:layout_gravity="top"
-        android:layout_weight="0.87"
-        android:padding="0dp"
-        android:fadingEdgeLength="0dp"
-        android:scaleType="fitXY"
-        android:addStatesFromChildren="true" android:clickable="true"/>
-
-    <!-- <RadioGroup
-        android:id="@+id/difficulty_group"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:orientation="horizontal" >
-
-        <RadioButton
-            android:id="@+id/difficulty_easy"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:checked="true"
-            android:text="@string/difficulty_easy" />
-
-        <RadioButton
-            android:id="@+id/difficulty_hard"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/difficulty_hard" />
-
-    </RadioGroup> -->
-
-</LinearLayout>
