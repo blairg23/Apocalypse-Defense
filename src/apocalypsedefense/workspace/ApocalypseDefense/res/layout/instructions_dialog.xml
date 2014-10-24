@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" android:clickable="false" android:layout_marginBottom="50dp"
+    >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="99dp"
+        android:layout_marginRight="100dp"
+        android:text="@string/tower_instructions"
+        android:textAppearance="?android:attr/textAppearanceLarge" android:maxEms="30" android:clickable="false"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:maxWidth="100dp"
+        android:text="@string/button_instructions"
+        android:textAppearance="?android:attr/textAppearanceSmall" android:clickable="false"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:text="(Tap to dismiss these instructions)"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+</RelativeLayout>
